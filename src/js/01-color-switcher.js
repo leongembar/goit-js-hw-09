@@ -17,6 +17,8 @@ function changeColorClick(){
     }
 }
 
+
+
 function stopChangeColorClick(){
     clearInterval(changeColorId);
     check = !check;

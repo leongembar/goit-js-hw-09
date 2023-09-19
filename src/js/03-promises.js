@@ -8,6 +8,7 @@ const refs = {
   form:document.querySelector('.form'),
 }
 
+
 refs.form.addEventListener("submit", (e)=>{e.preventDefault()})
 
 refs.btnStart.addEventListener('click', start);
