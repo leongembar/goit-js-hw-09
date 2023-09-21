@@ -47,9 +47,8 @@ refs.startBtn.addEventListener('click',startTimer);
 
 function startTimer(){
     timerId = setInterval(() => {
-    
-        
-        clickDate = new Date();
+            
+        let clickDate = new Date();
         const ms = selectedDate-clickDate;
         const date = convertMs(ms);
         getDate(date);
