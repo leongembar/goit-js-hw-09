@@ -18,6 +18,7 @@ const refs = {
 refs.startBtn.disabled =true;
 
 let selectedDate;
+let timerId = null;
 
 flatpickr("#datetime-picker", {
     enableTime: true,
@@ -46,6 +47,8 @@ refs.startBtn.addEventListener('click',startTimer);
 
 function startTimer(){
     timerId = setInterval(() => {
+    
+        
         clickDate = new Date();
         const ms = selectedDate-clickDate;
         const date = convertMs(ms);

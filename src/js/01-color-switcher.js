@@ -5,13 +5,14 @@ const refs =  {
 }
 
 let check = true;
+let changeColorId = null;
 
 refs.startBtn.addEventListener('click', changeColorClick);
 refs.stopBtn.addEventListener('click', stopChangeColorClick);
 
 function changeColorClick(){
     if (check){
-        changeColorId = setInterval(changeColor,1000);
+        changeColorId = setInterval(changeColor, 1000);
         check = !check;
        
     }
