@@ -50,8 +50,12 @@ function startTimer(){
             
         let clickDate = new Date();
         const ms = selectedDate-clickDate;
+        if (ms < 1000){
+            clearInterval(timerId);
+        }
         const date = convertMs(ms);
         getDate(date);
+       
     }, 1000)
 
 }
